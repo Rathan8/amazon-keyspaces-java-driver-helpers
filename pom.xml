@@ -68,13 +68,14 @@
             <version>0.8.6</version>
             <executions>
                <execution>
+                  <id>default-prepare-agent</id>
                   <goals>
                      <goal>prepare-agent</goal>
                   </goals>
                </execution>
                <!-- attached to Maven test phase -->
                <execution>
-                  <id>report</id>
+                  <id>jacoco-report</id>
                   <phase>test</phase>
                   <goals>
                      <goal>report</goal>
